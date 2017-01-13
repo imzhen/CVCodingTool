@@ -1,0 +1,47 @@
+{
+  "education": {
+    "header": "degree,f_applicant_id,f_campus_id,f_first_name,f_recruitment_id,f_last_name,f_year,filename,institution,string,year",
+    "string": "education|academic",
+    "name": "education"
+  },
+  "publication": {
+    "header": "AU,DA,DO,IS,PB,SN,SP,T2,TI,TY,VL,a_author_id,a_citation_count,a_cited_by_count,a_coauthor_count,a_h_index,absolute_compare_ratio,f_applicant_id,f_campus_id,f_first_name,f_recruitment_id,f_last_name,f_year,filename,filter_flag,first_doi,first_full_citation,first_normalized_score,first_score,first_title,hashcode,j_1ST_YR_PUB,j_5YR_IF_DENOMINATOR,j_5YR_IF_NUMERATOR,j_5YR_IMPACT_FACTOR,j_ARTL_INFLUENCE,j_CATEGORY_CODE,j_CATEGORY_DESCRIPTION,j_CATEGORY_RANKING,j_CITED_HALF_LIFE,j_COUNTRY,j_EIGENFACTOR,j_IF_DENOMINATOR,j_IF_NUMERATOR,j_IMMEDIACY_INDEX,j_IMPACT_FACTOR,j_ISO_ABBREV,j_ISSN,j_ITEMS_JCR_YR3,j_ITEMS_JCR_YR4,j_ITEMS_JCR_YR5,j_JIF_PERCENTILE,j_LANGUAGE,j_NORMEIGENFACTOR,j_QUARTILE_RANK,j_TITLE,j_Title20,j_categories,no_parsed,no_received,relative_compare_ratio,response_code_a,response_code_c,response_code_d,response_code_s,s_affiliation_id,s_article_number,s_article_title,s_authkeywords,s_author_id,s_citedby_count,s_current_author_id,s_description,s_doi,s_eid,s_first_author,s_id,s_journal_coverDate,s_journal_coverDisplayDate,s_journal_eIssn,s_journal_isbn,s_journal_issn,s_journal_issueIdentifier,s_journal_name,s_journal_pageRange,s_journal_type,s_journal_volume,s_orcid,s_publication_item_identifier,s_pubmed_id,s_source_id,s_url,second_doi,second_full_citation,second_normalized_score,second_score,second_title,string,string_refined,title_flag",
+    "string": "publication|article|paper|bibliography",
+    "name": "publication"
+  },
+  "grant": {
+    "header": "CDE,CDFA,CEC,DLPF,DOD,DOS,HHS,IES,NCI,NEA,NEH,NEI,NHGRI,NHLBI,NIA,NIAAA,NIAID,NIAMS,NIBIB,NICHD,NIDA,NIDCD,NIDCR,NIDDK,NIEHS,NIGMS,NIH,NIMH,NIMHD,NINDS,NINR,NLM,NSF,RAF,USAID,USDA,WMFK,f_applicant_id,f_campus_id,f_first_name,f_recruitment_id,f_last_name,f_year,filename,filter_flag,string",
+    "string": "grant|foundation|fund",
+    "name": "grant"
+  },
+  "development": {
+    "dir": "data\/test",
+    "fail_no_copy": "",
+    "destination": "file",
+    "name": "development"
+  },
+  "batch": {
+    "dir": "data\/sample4",
+    "fail_no_copy": "",
+    "destination": "file",
+    "name": "batch"
+  },
+  "batch2": {
+    "dir": "data",
+    "fail_no_copy": "",
+    "destination": "file",
+    "name": "batch2"
+  },
+  "server": {
+    "dir": "\/home\/research\/ucrecruit\/stem_cv\/split",
+    "fail_no_copy": "1",
+    "destination": "file",
+    "name": "server"
+  },
+  "server_test": {
+    "dir": "\/home\/research\/ucrecruit\/stem_cv\/split\/CV_1",
+    "fail_no_copy": "1",
+    "destination": "file",
+    "name": "server_test"
+  }
+}

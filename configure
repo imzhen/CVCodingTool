@@ -1,0 +1,33 @@
+# install pyenv
+git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+exec $SHELL
+git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile
+exec $SHELL
+pyenv install 3.5.2
+pyenv shell 3.5.2
+pyenv virtualenv 3.5.2 venv
+pyenv activate venv
+pip3 install -r requirements.txt
+
+# install poppler
+wget http://poppler.freedesktop.org/poppler-0.47.0.tar.xz
+tar -zxvf poppler-0.47.0.tar.xz
+cd poppler-0.47.0
+./configure --prefix=/usr               \
+            --sysconfdir=/etc           \
+            --disable-static            \
+            --enable-build-type=release \
+            --enable-cmyk               \
+            --enable-xpdf-headers       \
+            --with-testdatadir=$PWD/testfiles &&
+sudo make
+sudo make install
+cd ..
+
+# pull programs from Github
+git clone git://github.com/ucdavis/ucrecruit.git
+cd ucrecruit/CVCodingTool
